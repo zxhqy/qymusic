@@ -1,0 +1,263 @@
+/* pages/index/index.wxss */
+page {
+  background-color: #f5f5f5;
+}
+
+mp-loading{
+  height: 50rpx;
+  width: 100%;
+  position: absolute;
+  top: 70%;
+}
+
+
+.bannerContainer{
+  padding-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.banners {
+  width: 92%;
+  height: 300rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.banners image{
+  width: 100%;
+  height: 100%;
+}
+
+.navContainer {
+  background-color: #fff;
+  padding: 10rpx 25rpx 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.navItem .iconfont {
+  margin: 25rpx 0 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #f31316;
+  color:white;
+  font-size: 45rpx;
+}
+
+.navItem text {
+  font-size:26rpx;
+}
+
+/* 推荐歌曲 */
+.recommendContainer {
+  margin: 2rpx 0 20rpx;
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+/* 推荐内容区域 */
+.recommendScroll {
+  display: flex;
+  height: 320rpx;
+}
+
+.scrollItem {
+  margin-top: 30rpx;
+  width: 200rpx;
+  margin-right:20rpx;
+}
+
+.scrollItem image {
+  box-sizing: content-box;
+  width: 200rpx;
+  height: 200rpx;
+  box-shadow: 0rpx -22rpx 5rpx -14rpx #ddd; 
+  border-radius: 20rpx;
+}
+
+.scrollItem text {
+  font-size: 26rpx;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 设置对齐模式 */
+  -webkit-box-orient:vertical ;
+  /* 设置盒子的行数 */
+  -webkit-line-clamp: 2;
+}
+
+/* 排行榜 */
+.topList{
+  padding:30rpx 40rpx 0;
+  margin-top: 20rpx;
+  margin-bottom: 45rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  /* height: 600rpx; */
+}
+
+.topListSwiper{
+  height: 500rpx;
+}
+
+.swiperItem {
+  width: 96%;
+  
+}
+
+.swiperItem .title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.musicItem {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.musicItem image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 12rpx;
+  border:1rpx solid #eee; 
+}
+
+.musicItem .count {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.musicName {
+  height: 100rpx;
+  line-height: 100rpx;
+  max-width: 30vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.authorName {
+  font-size: 24rpx;
+  color:#787677;
+  height: 100rpx;
+  line-height: 109rpx;
+  max-width: 20vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fenge{
+  font-size: 24rpx;
+  color:#787677;
+  height: 100rpx;
+  line-height: 109rpx;
+  margin: 0 5rpx;
+}
+
+.bottomControl {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  border-top: 1rpx solid #ddd;
+  background-color: white;
+}
+
+.bottomControl .cover{
+  position: absolute;
+  top: 0%;
+  left: 30rpx;
+  height: 8vh;
+  width: 8vh;
+}
+
+.bottomControl .disc{
+  height: 100%;
+  width: 100%;
+}
+
+.bottomControl .musicCover {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+.bottomControl .musicInfo{
+  margin-left: calc(9vh + 30rpx);
+  height: 100%;
+}
+
+.bottomControl .musicInfo text {
+  line-height: 8vh;
+}
+
+.controlButton {
+  position: absolute;
+  right: 30rpx;
+}
+
+.controlButton text{
+  font-size: 60rpx;
+  color: #323232;
+  line-height: 8vh;
+}
+
+.icon-iconsMusicyemianbofangmoshiPlayList{
+  margin-left: 25rpx;
+}
+
+.bottomControlSwiper{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  height: 20vh;
+  width: 75%;
+  /* overflow: none; */
+}
+
+/* .bottomControlSwiperItem{
+
+} */
+
+ .header {
+  display: flex;
+  background-color: #fff;
+}
+
+
+ .header .search {
+  border:1rpx solid #eee;
+  flex: 1;
+  margin:20rpx 50rpx 0;
+  height: 60rpx;
+  font-size: 26rpx; 
+  text-align: center;
+  line-height: 60rpx;
+  color: #939594;
+  background-color: #edefee;
+  border-radius: 30rpx;
+}

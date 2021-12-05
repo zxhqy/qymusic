@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ranking/ranking",
+    "pages/personal/personal",
+    "pages/musicListSquare/musicListSquare",
+    "pages/search/search",
+    "pages/comment/comment",
+    "pages/songDetail/songDetail",
+    "pages/musicList/musicList",
+    "pages/recommendSong/recommendSong",
+    "pages/login/login",
+    "pages/recommendMusicList/recommendMusicList"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#dc2c1f",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "轻音音乐"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/main.png",
+        "selectedIconPath": "/static/images/tabs/main-selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/personal.png",
+        "selectedIconPath": "/static/images/tabs/personal-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}
