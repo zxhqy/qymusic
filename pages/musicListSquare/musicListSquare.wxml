@@ -16,15 +16,6 @@
         <view class="mask" style="display:{{isMaskShow?'block':'none'}}"></view>
         <swiper class="categorySwiper" current="{{categoryIndex}}" bindchange="changeCurrent">
             <swiper-item class="categorySwiperItem" wx:for="{{tagMusicList}}">
-                <!-- <scroll-view class="musicListScroll" scroll-y enable-flex bindscrolltolower="reachBottom">
-                    <view class="listItem" wx:for="{{item}}" wx:for-item="musicList" bindtap="toMusicList" data-musiclistid="{{musicList.id}}">
-                        <image class="cover" src="{{musicList.coverImgUrl}}?param=300y300" lazy-load></image>
-                        <text class="title">{{musicList.name}}</text>
-                    </view>
-                    <view class="loadingContainer">
-                        <mp-loading show="{{isMore}}"></mp-loading>
-                    </view>
-                </scroll-view> -->
                 <musicListCard isMore="{{isMore}}" musicList="{{item}}" bind:reachBottom="reachBottom" bind:toMusicList="toMusicList"></musicListCard>
             </swiper-item>
         </swiper>

@@ -15,7 +15,6 @@
     <view class="listContainer">
         <view class="listHeader">
             <text>播放全部</text>
-            <text class="changeMore">多选</text>
         </view>
         <scroll-view scroll-y="{{isScroll}}" class="listScroll" wx:if="{{recommendList.length!==0}}">
             <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" data-index="{{index}}" data-song="{{item.id}}" bindtap="toSongDetail">
@@ -24,7 +23,7 @@
                     <text class="musicName">{{item.name}}</text>
                     <text class="author">{{item.artists[0].name}}</text>
                 </view>
-                <text class="iconfont icon-gengduo"></text>
+
             </view>
         </scroll-view>
         <view class="tip">推荐歌曲列表加载中...</view>

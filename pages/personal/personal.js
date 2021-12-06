@@ -62,9 +62,15 @@ Page({
 
   // 跳转至登录页面
   toLogin() {
-    wx.navigateTo({
-      url: '/pages/login/login'
-    })
+    let userInfo = wx.getStorageSync('userInfo')
+    if(!userInfo){
+      wx.navigateTo({
+        url: '/pages/login/login'
+      })
+    }else {
+      return;
+    }
+
   },
 
   async toSongDetail(e) {
